@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CandyBoB</title>
   <!-- Фавикон на закладке страницы -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="shortcut icon" href="icons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +17,33 @@
 
 <body>
   <header>
+
     <div class="topContainer">
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="nav-brand-img" src="images/nav-pencin.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-personal">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
       <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-      <img class ="mountain-birds" src="images/bird.png" alt="birds">
+      <img class="mountain-birds" src="images/bird.png" alt="birds">
       <!-- h1-h6 являются блочными элементами -->
       <h1>I'm CandyBoB</h1>
       <!-- p являетмя блочным элементом -->
@@ -30,51 +55,56 @@
     </div>
   </header>
 
-  <main>
-    <div class="middle-container">
-      <div class="profile">
-        <img class="avatar-image" src="images/man.png" alt="avatar-img">
-        <h2>Hi!</h2>
-        <p>I am a junior WebDeveloper and am willing to help design your website using HTML and CSS.<br>
-          If you are looking for a performer for your personal website, I am at your service.<br> No payment required or at your discretion.</p>
+  <main class="middle-container">
+    <div class="profile">
+      <img class="avatar-image" src="images/man.png" alt="avatar-img">
+      <h2>Hi!</h2>
+      <p>I am a junior WebDeveloper and am willing to help design your website using HTML and CSS.
+        If you are looking for a performer for your personal website, I am at your service.</p>
+    </div>
+    <div class="hr"></div>
+    <div class="skills">
+      <div class="info-bottom">
+        <img src="images/problem.png" alt="my-qst">
+        <p>Do you find this website enjoyable to use?</p>
       </div>
-      <div class="hr"></div>
-      <div class="skills">
-        <div class="info-bottom">
-          <img src="images/problem.png" alt="my-qst">
-          <p>Do you find this website enjoyable to use?</p>
-        </div>
-        <img class="cloud-skills-top" src="images/cloud.png" alt="cloud-img">
-        <h2>What can I do...</h2>
-        <img class="skills-image" src="images/pencil.png" alt="skills-img">
-        <div class="skill-row">
-          <h3>Layout creation</h3>
-          <h3>Website implementation</h3>
-          <h3>Website support</h3>
-        </div>
-        <div class="skill-row">
-          <img class="cloud-skills-bot" src="images/cloud.png" alt="cloud-img">
-        </div>
+      <img class="cloud-skills-top" src="images/cloud.png" alt="cloud-img">
+      <h2>What can I do...</h2>
+      <img class="skills-image" src="images/pencil.png" alt="skills-img">
+      <div class="skill-row">
+        <h3>Layout creation</h3>
+        <h3>Website implementation</h3>
+        <h3>Website support</h3>
       </div>
-      <div class="hr"></div>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <img class="skill-row-images" src="images/greeting.png" alt="">
-        <p>If you have any questions or suggestions, go ahead!</p></br>
-        <a class="btn" href="mailto:name@email.com"><img class="skill-row-images" src="images/email.png" alt="email-link"></a>
-      </div>
+      <img class="cloud-skills-bot" src="images/cloud.png" alt="cloud-img">
+    </div>
+    <div class="hr"></div>
+    <div class="contact-me">
+      <h2>Contact me</h2>
+      <img class="skill-row-images" src="images/greeting.png" alt="">
     </div>
   </main>
 
   <footer>
-
     <div class="bottom-container">
+      <a class="footer-link" href="mailto:name@email.com"><img class="skill-row-images" src="images/email.png" alt="email-link"></a>
       <a class="footer-link" href="https://www.linkedin.com/"><img class="skill-row-images" src="images/linkedin.png" alt="linkedin-link"></a>
       <a class="footer-link" href="https://twitter.com/"><img class="skill-row-images" src="images/twitter.png" alt="twitter-link"></a>
       <a class="footer-link" href="https://ru-ru.facebook.com/"><img class="skill-row-images" src="images/facebook.png" alt="facebook-link"></a>
-      <!-- <p></br>© 2021 CandyBoB</p> -->
+      <p></br>© 2021 CandyBoB</p>
     </div>
   </footer>
 </body>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 
 </html>
