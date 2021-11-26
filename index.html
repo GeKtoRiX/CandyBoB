@@ -18,65 +18,98 @@
 <body>
   <header>
 
+    <!-- Навигационная панель, фиксированная сверху, растянутая до lg размера с темным цветом -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <!-- Внутренний контейнер для нав. панели -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="nav-brand-img" src="images/nav-pencin.png" alt=""></a>
+        <!-- Кнопка, появляющаяся после "сжатия" нав. панели. -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Контейнер ,связанный с кнопкой "сжатия" -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!-- Не маркированный список с медиа запросамипри "сжатии" и  доп. классом -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-personal">
+            <!-- Элемент списка -->
+            <li class="nav-item">
+              <!-- Ссылка на страницу -->
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="topContainer">
-
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="nav-brand-img" src="images/nav-pencin.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-personal">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Reviews</a>
-              </li>
-            </ul>
+      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-12">
+            <!-- h1-h6 являются блочными элементами -->
+            <h1>I'm CandyBoB</h1>
+          </div>
+          <div class="col-xl-12">
+            <!-- p являетмя блочным элементом -->
+            <!-- span является строчным элементом -->
+            <p class="whoIam">a <span>Web</span>Developer</p>
+          </div>
+          <div class="col-xl-12">
           </div>
         </div>
-      </nav>
-
-      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-      <img class="mountain-birds" src="images/bird.png" alt="birds">
-      <!-- h1-h6 являются блочными элементами -->
-      <h1>I'm CandyBoB</h1>
-      <!-- p являетмя блочным элементом -->
-      <!-- span является строчным элементом -->
-      <p class="whoIam">a <span>Web</span>Developer</p>
-      <!-- img является строчно-блочным элементом -->
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+      </div>
       <img class="mountain" src="images/mountain.png" alt="mountain-img">
+      <!-- img является строчно-блочным элементом -->
+      <img class="mountain-birds" src="images/bird.png" alt="bird-img">
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
     </div>
   </header>
-
   <main class="middle-container">
     <div class="profile">
       <img class="avatar-image" src="images/man.png" alt="avatar-img">
-      <h2>Hi!</h2>
-      <p>I am a junior WebDeveloper and am willing to help design your website using HTML and CSS.
-        If you are looking for a performer for your personal website, I am at your service.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-12 col-mid-12">
+            <h2>Hi!</h2>
+          </div>
+          <div class="col-xl-12 col-mid-12">
+            <p>I am a junior WebDeveloper and am willing to help design your website using HTML and CSS.<br />
+              If you are looking for a performer for your personal website, I am at your service.</p>
+          </div>
+          <div class="col-xl-12 col-mid-12">
+            <h2>What can I do...</h2>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="hr"></div>
     <div class="skills">
-      <div class="info-bottom">
+      <!-- Всплывающее окно -->
+      <!-- <div class="info-bottom">
         <img src="images/problem.png" alt="my-qst">
         <p>Do you find this website enjoyable to use?</p>
-      </div>
-      <img class="cloud-skills-top" src="images/cloud.png" alt="cloud-img">
-      <h2>What can I do...</h2>
+      </div> -->
       <img class="skills-image" src="images/pencil.png" alt="skills-img">
       <div class="skill-row">
-        <h3>Layout creation</h3>
-        <h3>Website implementation</h3>
-        <h3>Website support</h3>
+        <div class="hr"></div>
+        <div class="container-fluid">
+          <div class="row justify-content-sm-center justify-content-center">
+            <div class="col-xl-6">
+              <h3>Layout creation</h3>
+            </div>
+            <div class="col-xl-6">
+              <h3>Website support</h3>
+            </div>
+            <div class="col-xl-12">
+              <h3>Website implementation</h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="cloud-skills-bot" src="images/cloud.png" alt="cloud-img">
     </div>
     <div class="hr"></div>
     <div class="contact-me">
@@ -84,7 +117,6 @@
       <img class="skill-row-images" src="images/greeting.png" alt="">
     </div>
   </main>
-
   <footer>
     <div class="bottom-container">
       <a class="footer-link" href="mailto:name@email.com"><img class="skill-row-images" src="images/email.png" alt="email-link"></a>

@@ -17,7 +17,7 @@ h1 {
   /* Межстрочное расстояние нужно указывать просто числом */
   line-height: 2.1;
   font-family: 'Sacramento', cursive;
-  font-size: 4.375rem;
+  font-size: 4rem;
   /* 16px = 100% = 1em(rem)  */
   /* em и % наследуются потомками или вложенностями */
 }
@@ -49,10 +49,6 @@ p {
   color: #FFC93C;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: white;
-}
-
 .navbar-nav-personal {
   margin-top: 10px;
   border-radius: 50px;
@@ -80,6 +76,7 @@ p {
 .top-cloud {
   /* Исключение из потока */
   position: absolute;
+  width: 8%;
   margin-left: 15%;
   top: 20%;
   opacity: 0.7;
@@ -94,6 +91,7 @@ p {
 
 .mountain {
   position: relative;
+  width: 35%;
   opacity: 0.8;
   top: 0;
   left: 0;
@@ -101,6 +99,7 @@ p {
 
 .bottom-cloud {
   position: absolute;
+  width: 8%;
   left: 25%;
   bottom: 45%;
   opacity: 0.9;
@@ -117,9 +116,7 @@ p {
 }
 
 .profile p {
-  margin: 15px auto;
-  padding: 0;
-  width: 46rem;
+  padding: 10px;
   line-height: 2;
 }
 
@@ -135,20 +132,10 @@ p {
   margin: 20px auto 29px;
 }
 
-.skill-row {
-  display: inline-block;
-  width: 100%;
-  /* Для более длинного описания */
-  /* text-align: left; */
-}
-
 .skill-row h3 {
-  display: inline-block;
-  margin: 10px;
-  padding: 0;
-  width: 33.3%;
+  padding: 10px;
   font-family: 'Sacramento', cursive;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .skill-row h3:hover {
@@ -242,11 +229,9 @@ p {
 }
 
 .bottom-container a {
-  text-decoration: none;
   color: #EDEDED;
 }
 
 .bottom-container p {
-  text-decoration: none;
   color: #EDEDED;
 }
