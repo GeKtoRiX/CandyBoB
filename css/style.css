@@ -42,6 +42,7 @@ p {
   margin-top: 10px;
   border-radius: 100%;
   box-shadow: 10px 3px 3px #FFC93C;
+  transform: rotate(-15deg);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -174,8 +175,9 @@ p {
   margin-bottom: 10px;
 }
 
-#carouselWorkIndicators{
+#carouselWorkIndicators {
   margin: 0 25%;
+  box-shadow: 8px -5px 20px white;
 }
 
 .carousel-item {
@@ -185,6 +187,14 @@ p {
 .carousel-item img {
   object-fit: cover;
   max-height: 500px;
+}
+
+.btn-personal{
+  margin-top: 10px;
+}
+
+button i{
+  padding-left: 2px;
 }
 
 .contact-me {
