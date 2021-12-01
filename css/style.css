@@ -45,7 +45,6 @@ p {
   border-radius: 100%;
   box-shadow: 10px 3px 3px #FFC93C;
   transform: rotate(-15deg);
-  background-color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -64,10 +63,8 @@ p {
 .navbar-nav-personal {
   margin-top: 10px;
   border-radius: 50px;
-  border: 1px solid linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
   background: rgb(2, 0, 36);
   background-image: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );
-  box-shadow: 5px 4px 10px #FFC93C;
 }
 
 .topContainer {
@@ -123,8 +120,6 @@ p {
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
   color: #FFC93C;
 }
-
-
 
 .profile {
   position: relative;
@@ -191,7 +186,7 @@ p {
 }
 
 .carousel-item {
-    padding: 15% 10%;
+    padding: 10% 10%;
 }
 
 .carousel-item h3 {
@@ -200,6 +195,7 @@ p {
 
 .carousel-item img {
   width: 40px;
+  margin: 5px;
 }
 
 .carousel-item em {
