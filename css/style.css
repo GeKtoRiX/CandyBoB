@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   /* 32px */
 }
@@ -45,10 +45,10 @@ p {
   border-radius: 100%;
   box-shadow: 10px 3px 3px #FFC93C;
   transform: rotate(-15deg);
+  background-color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  text-align: center;
   font-style: italic;
   color: #FFC93C;
 }
@@ -58,7 +58,16 @@ p {
 }
 
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: white;
+  color: #EDEDED;
+}
+
+.navbar-nav-personal {
+  margin-top: 10px;
+  border-radius: 50px;
+  border: 1px solid linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
+  background: rgb(2, 0, 36);
+  background-image: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );
+  box-shadow: 5px 4px 10px #FFC93C;
 }
 
 .topContainer {
@@ -70,6 +79,7 @@ p {
   color: #FFC93C;
   border-bottom: 2px solid #baf0ff;
 }
+
 
 /* .whoIam {} */
 .whoIam span {
@@ -114,6 +124,8 @@ p {
   color: #FFC93C;
 }
 
+
+
 .profile {
   position: relative;
 }
@@ -127,7 +139,7 @@ p {
   margin: 2% auto 2%;
   display: inline-block;
   width: 2%;
-  border-bottom: 9px dotted #EDEDED;
+  border-bottom: 7px dotted #EDEDED;
 }
 
 .avatar-image {
@@ -145,10 +157,6 @@ p {
   cursor: pointer;
 }
 
-.skills {
-  margin: 0;
-  padding: 0;
-}
 
 .skills-image {
   margin-top: 2%;
@@ -171,12 +179,11 @@ p {
 }
 
 .skill-row-images {
+  margin-bottom: 10px;
   width: 40px;
-  margin: 10px 0;
 }
 
 #carouselWorkIndicators {
-  padding: 0% 5%;
   margin: 0 25%;
   box-shadow: 8px -5px 20px #EDEDED;
   border-radius: 20px;
@@ -184,16 +191,15 @@ p {
 }
 
 .carousel-item {
-  /* max-height: 500px; */
-  padding: 15% 3%;
+    padding: 15% 10%;
 }
 
 .carousel-item h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .carousel-item img {
-  max-height: 500px;
+  width: 40px;
 }
 
 .carousel-item em {
@@ -216,7 +222,7 @@ p {
 
 .bottom-container {
   position: relative;
-  padding-top: 10px;
+  padding: 10px 10px;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
 }
@@ -253,7 +259,7 @@ p {
 }
 
 .bottom-container {
-  padding: 0 0 10px;
+  padding: 10px 0 10px;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
 }
 
@@ -262,5 +268,6 @@ p {
 }
 
 .bottom-container p {
+  font-size: 14px;
   color: #EDEDED;
 }
