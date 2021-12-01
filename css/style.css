@@ -29,9 +29,8 @@ h2 {
   /* 32px */
 }
 
-.skills-h2{
-}
-
+/* .skills-h2{
+} */
 h3 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -71,8 +70,7 @@ p {
   border-bottom: 2px solid #baf0ff;
 }
 
-.whoIam {}
-
+/* .whoIam {} */
 .whoIam span {
   text-decoration: underline;
 }
@@ -177,23 +175,33 @@ p {
 }
 
 #carouselWorkIndicators {
+  padding: 0% 5%;
   margin: 0 25%;
-  box-shadow: 8px -5px 20px white;
+  box-shadow: 8px -5px 20px #EDEDED;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .carousel-item {
-  max-height: 500px;
+  /* max-height: 500px; */
+  padding: 15% 3%;
+}
+
+.carousel-item h3 {
+  font-size: 20px;
 }
 
 .carousel-item img {
-  object-fit: cover;
   max-height: 500px;
 }
 
-.contact-me {
-
+.carousel-item em {
+  font-size: 12px;
 }
 
+/* .contact-me {
+
+} */
 .contact-me h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.1rem;
@@ -212,6 +220,10 @@ p {
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 44, 141, 1) 45%, rgba(0, 212, 255, 1) 100%);
 }
 
+.bottom-container p {
+  margin: 10px;
+}
+
 /* Pop-up window */
 /* .info-bottom {
   display: none;
@@ -227,7 +239,6 @@ p {
   font-size: 14px;
   text-align: left;
 } */
-
 .info-bottom:hover {
   border: 2px solid #F4F9F9;
   cursor: pointer;
