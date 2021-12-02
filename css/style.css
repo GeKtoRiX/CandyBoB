@@ -61,7 +61,7 @@ p {
 }
 
 .navbar-nav-personal {
-  margin-top: 10px;
+  margin-top: 0;
   border-radius: 50px;
   background: rgb(2, 0, 36);
   background-image: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );
