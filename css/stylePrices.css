@@ -1,6 +1,6 @@
 .container-fluid-prices {
   position: relative;
-  width: 40%;
+  width: 35%;
 }
 
 .col-bottom-space {
@@ -8,7 +8,6 @@
 }
 
 .container-fluid-prices .card {
-  max-width: 13rem;
   padding: 5px;
   border: 1px solid #FFC93C;
   background-image: radial-gradient(circle 300px at 8% 89.3%, rgba(20, 157, 208, 1) 0%, rgba(140, 63, 226, 1) 90%);
@@ -20,20 +19,36 @@
   cursor: pointer;
 }
 
-.container-fluid-prices .card .card-title, .card-text {
+.card-title, .card-text {
   margin-bottom: 35%;
+}
+
+.container-fluid-prices h2 {
+  font-size: 25px;
 }
 
 .container-fluid-prices h3 {
   font-size: 20px;
 }
 
-.container-fluid h1 {
-  margin: 0;
+@media(max-width:420px) {
+  .mountain-birds {
+    display: none;
+  }
+
+  .container-fluid-prices {
+    position: relative;
+    width: 65%;
+  }
 }
 
-@media(max-width:420px){
-  .mountain-birds{
+@media(min-width:420px) {
+  .mountain-birds {
     display: none;
+  }
+
+  .container-fluid-prices {
+    position: relative;
+    width: 50%;
   }
 }

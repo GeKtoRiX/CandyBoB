@@ -173,10 +173,6 @@ p {
   width: 40px;
 }
 
-.container-fluid {
-  padding: 0 auto;
-}
-
 #carouselWorkIndicators {
   box-shadow: 8px -5px 20px #EDEDED;
   border-radius: 20px;
@@ -184,7 +180,6 @@ p {
 
 .carousel-item {
   padding: 10% 10%;
-  padding-bottom: 15%;
 }
 
 .carousel-item h3 {
@@ -265,6 +260,12 @@ p {
 
 /* Up to 768px */
 @media (max-width:420px) {
+
+  #carouselWorkIndicators {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .top-cloud, .bottom-cloud {
     display: none;
   }
@@ -287,22 +288,14 @@ p {
     font-size: 14px;
   }
 
-  #carouselWorkIndicators {
-    min-height: 325px;
-  }
-
   .carousel-item h3 {
     font-size: 14px;
   }
-
-  .carousel-item {
-    padding: 20px 10px 10px;
-  }
 }
 
-@media(min-width:768px) {
+@media(min-width:765px) {
   #carouselWorkIndicators {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
   }
 
