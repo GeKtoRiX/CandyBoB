@@ -17,14 +17,14 @@ h1 {
   /* Межстрочное расстояние нужно указывать просто числом */
   line-height: 2.1;
   font-family: 'Sacramento', cursive;
-  font-size: 4rem;
+  font-size: 3.2em;
   /* 16px = 100% = 1em(rem)  */
   /* em и % наследуются потомками или вложенностями */
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: normal;
   /* 32px */
 }
@@ -63,8 +63,9 @@ p {
 .navbar-nav-personal {
   margin-top: 0;
   border-radius: 50px;
+  border: 1px solid #FFC93C;
   background: rgb(2, 0, 36);
-  background-image: radial-gradient( circle 300px at 8% 89.3%,  rgba(20,157,208,1) 0%, rgba(140,63,226,1) 90% );
+  background-image: radial-gradient(circle 300px at 8% 89.3%, rgba(20, 157, 208, 1) 0%, rgba(140, 63, 226, 1) 90%);
 }
 
 .topContainer {
@@ -77,7 +78,6 @@ p {
   border-bottom: 2px solid #baf0ff;
 }
 
-
 /* .whoIam {} */
 .whoIam span {
   text-decoration: underline;
@@ -87,9 +87,8 @@ p {
   /* Исключение из потока */
   position: absolute;
   width: 8%;
-  margin-left: 15%;
-  top: 20%;
-  opacity: 0.7;
+  right: 37%;
+  top: 53%;
 }
 
 .mountain-birds {
@@ -101,18 +100,15 @@ p {
 
 .mountain {
   position: relative;
+  z-index: 1;
   width: 35%;
-  opacity: 0.8;
-  top: 0;
-  left: 0;
 }
 
 .bottom-cloud {
   position: absolute;
   width: 8%;
-  left: 25%;
+  left: 35%;
   bottom: 45%;
-  opacity: 0.9;
 }
 
 .middle-container {
@@ -152,7 +148,6 @@ p {
   cursor: pointer;
 }
 
-
 .skills-image {
   margin-top: 2%;
   width: 5%;
@@ -178,15 +173,18 @@ p {
   width: 40px;
 }
 
+.container-fluid {
+  padding: 0 auto;
+}
+
 #carouselWorkIndicators {
-  margin: 0 25%;
   box-shadow: 8px -5px 20px #EDEDED;
   border-radius: 20px;
-  text-align: center;
 }
 
 .carousel-item {
-    padding: 10% 10%;
+  padding: 10% 10%;
+  padding-bottom: 15%;
 }
 
 .carousel-item h3 {
@@ -202,9 +200,6 @@ p {
   font-size: 12px;
 }
 
-/* .contact-me {
-
-} */
 .contact-me h2 {
   font-family: 'Merriweather', serif;
   font-size: 1.1rem;
@@ -266,4 +261,56 @@ p {
 .bottom-container p {
   font-size: 14px;
   color: #EDEDED;
+}
+
+/* Up to 768px */
+@media (max-width:420px) {
+  .top-cloud, .bottom-cloud {
+    display: none;
+  }
+
+  .mountain, .avatar-image, .skills-image {
+    visibility: hidden;
+  }
+
+  .topContainer h1 {
+    font-size: 40px;
+  }
+
+  .topContainer p {}
+
+  .profile h2 {
+    font-size: 25px;
+  }
+
+  .profile p {
+    font-size: 14px;
+  }
+
+  #carouselWorkIndicators {
+    min-height: 325px;
+  }
+
+  .carousel-item h3 {
+    font-size: 14px;
+  }
+
+  .carousel-item {
+    padding: 20px 10px 10px;
+  }
+}
+
+@media(min-width:768px) {
+  #carouselWorkIndicators {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .profile h2 {
+    font-size: 25px;
+  }
+
+  .carousel-item {
+    padding: 40px 50px 40px;
+  }
 }
